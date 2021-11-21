@@ -55,6 +55,11 @@ nav ul li:hover{
     width: 50px;
 }
 
+.logo {
+    height: auto;
+    width: 50px;
+}
+
 /***************************************************/
 
 /**** MAIN ****/
@@ -119,11 +124,10 @@ footer{
     background-color: white;
 }
 
-section div {
-    display: flex;
-    justify-content: space-between;    
+/*section div {
     padding: 20px;
-}
+    background-color: #ff8e72;
+}*/
 
 .product_description{
     color: black;
