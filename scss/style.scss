@@ -1,0 +1,272 @@
+body {
+    color: #eaf8bf;
+}
+
+/**** NAVEGADOR ENTRE PÁGINAS ****/
+header {
+    position: sticky;
+    top: 1px;
+    background-color: #ffaf87;   
+} 
+
+nav {
+    
+    ul{        
+        display: flex;
+        justify-content: center;
+        li{
+            &:hover{        
+                background-color: #eaf8bf;
+                transform: scale(1.2);
+            }
+            list-style-type: none;    
+            padding: 20px;
+            a{    
+                color: #1B9AAA;
+                text-decoration: none;
+                font-family: 'patrick hand';
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            
+        }
+    }
+}
+
+/**********************************/
+
+/**** TAMAÑO DE LOGO, CARRITO DE COMPRAS Y LOGIN ****/
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+
+    div{
+        padding-top: 30px;   
+    }
+
+    img{    
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.logo {
+    height: auto;
+    width: 50px;
+}
+
+/***************************************************/
+
+/**** MAIN ****/
+
+main {
+    background-color: #ff8e72;
+}
+
+/*************/
+
+/**** footer ****/
+
+footer{    
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffaf87;
+    color: black;
+}
+
+.footer_help {
+    text-align: left;
+}
+
+.footer_description {
+    display: flex;
+}
+
+.footer_signup {
+    padding-left: 10px;   
+}
+
+
+.footer_about{    
+    width: 350px;
+    text-align: justify;    
+}
+
+.footer_social_media img{
+    width: auto;
+    height: 40px;
+}
+/****************/
+
+/**** GRID PRODUCTS ****/
+
+.grid_products{
+    display:flex;        
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.product_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    padding: 0px;
+}
+
+.product_image img {    
+    height: auto;        
+    width: 150px;    
+    background-color: white;
+}
+
+.product_description{
+    color: black;
+    text-align: left;        
+    padding: 0px;
+    width: 180px;
+}
+
+.product_description table tr td {
+    font-size: 10px;    
+}
+
+.star{
+    background-image: url("../public/img/five_stars.png");    
+    background-size: 38.5px;
+    background-repeat: repeat-x;
+    height: 0px;
+}
+
+
+
+/**********************/
+
+/**** CARRUSEL ****/
+#description-carrusel {
+    width: 50vh;
+    text-align: justify;
+    padding: 0 10vh 0 0;
+}
+
+.carrusel {
+    justify-content: center;
+    display: flex;
+
+    div {
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+#carrusel-image {
+    background-image: url("../public/img/carrusel1.jpg");
+    width: 100vh;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+#reviews {
+    background-image: url("../public/img/lorem-ipsum.jpg");
+    background-repeat: round;
+    background-size: 50% 50%;
+    width: 220vh;
+    height: 100vh;
+}
+
+/*****************/
+
+/* ABOUT PAGE */
+
+#about_container{
+    display:grid;    
+    grid-template-areas: "head head head" "content1 content2 content3" "description1 description2 description3";
+    justify-items: center;
+
+    img {
+        width: 420px;
+        height: auto;
+    }
+}
+
+#head_about_container{
+    grid-area:head;
+
+    img {
+        width: 1080px;
+        height: auto;
+    }
+}
+
+#content_about_container_1{          
+    grid-area: content1;
+}
+
+#content_about_container_2{        
+    grid-area: content2;
+}
+
+#content_about_container_3{    
+    
+    grid-area: content3;
+}
+
+.description_about_container {
+    text-align: justify;
+    width: 420px;
+}
+
+#description_about_container_1{
+ 
+    grid-area: description1;
+}
+
+#description_about_container_2{
+    
+    grid-area: description2;
+}
+
+#description_about_container_3{
+    grid-area: description3;
+}
+
+/* TOYS PAGE */
+
+#form{
+    justify-content: right;
+
+    div{
+        display: inline-block;
+    }
+}
+
+#busqueda{    
+    display: inline-block;
+}
+
+#personalize_product_description{    
+    position: relative;
+    bottom: 17vh;
+    margin-left: 50vh;
+}
+
+#table_shoping{
+    padding: 5vh 5vh 5vh 50vh;
+    text-align: left;
+}
+
+#table_shoping{
+    padding: 5vh 5vh 5vh 50vh;
+    text-align: left;
+
+    tr {
+        td{
+            padding: 5vh 5vh 5vh 5vh;
+        }
+    }
+}
+
+#count {
+    text-align: right;    
+}
+
