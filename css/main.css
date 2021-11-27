@@ -4,56 +4,37 @@ body {
     color: #eaf8bf;
 }
 
+.header .navbar {
+    background-color: transparent !important;
+}
+
 /**************/
 
 /**** NAVEGADOR ENTRE PÁGINAS ****/
 header {
-    position: sticky;
+    position: sticky !important;
     top: 1px;
     background-color: #ffaf87;    
 }
 
-nav ul{        
-    display: flex;
-    justify-content: center;    
+nav ul li{    
+    padding: 20px;    
 }
 
-nav ul li{
-    list-style-type: none;    
-    padding: 20px;
-    
-}
-
-nav ul li a{    
-    color: #1B9AAA;
-    text-decoration: none;
+nav ul li a{            
     font-family: 'patrick hand';
-    font-weight: bolder;
     font-size: 20px;
 }
 
 nav ul li:hover{        
-    background-color: #eaf8bf;
+    background-color: #ffaf87;
+    font-weight: bolder;
     transform: scale(1.2);
 }
 
 /**********************************/
 
 /**** TAMAÑO DE LOGO, CARRITO DE COMPRAS Y LOGIN ****/
-
-.cabecera{
-    display: flex;
-    justify-content: space-between;
-}
-
-.cabecera div{
-    padding-top: 30px;   
-}
-
-.cabecera img{    
-    height: 50px;
-    width: 50px;
-}
 
 .logo {
     height: auto;
