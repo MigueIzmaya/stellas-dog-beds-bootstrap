@@ -20,10 +20,10 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="../public/img/logo.png" class="logo" alt="logo"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../public/img/logo.png" class="logo" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,7 +38,7 @@
                             <a class="nav-link" href="../pages/shop.html">Shop All</a>
                         </li>                  
                         
-                        <li class="nav-item">
+                        <li class="nav-item bg-info bg-opacity-25">
                             <a class="nav-link" href="../pages/bestseller.html">Best Seller</a>
                         </li>
 
@@ -70,118 +70,133 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Tabla para mostrar los productos disponibles -->
-
+    <main>        
         <section>
-            <div class="grid_products">
 
-                <div class="product_content product_1">
-                    <div class="product_image">
-                        <img src="../public/img/bed1.png" alt="Toy Story">
-                    </div>                    
-                    <div class="product_description">
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Toy Story</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Brand:</th>
-                                <td>Fantasy Ruz Source</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Concept:</th>
-                                <td>Disney</td>
-                            </tr>
-                        </table>
-                        
-                    </div>
-
-                    <div class="star"></div>                    
-                </div>                
-        
-                <div class="product_content product_2">
-                    <div class="product_image">
-                        <img src="../public/img/bed2.png" alt="Tent">
-                    </div>                    
-                    <div class="product_description">
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Tent</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Brand:</th>
-                                <td>PATHD</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Concept:</th>
-                                <td>Adventure</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="star"></div>
-                </div>            
-                
-                <div class="product_content product_3">
-                    <div class="product_image">
-                        <img src="../public/img/bed3.png" alt="Piñata">
-                    </div>                    
-                    <div class="product_description">
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Piñata</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Brand:</th>
-                                <td>Sentiments, Inc.</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Concept:</th>
-                                <td>Colors</td>
-                            </tr>
-                        </table>
-                    </div>     
-                    <div class="star"></div>           
-                </div>
-        
-                <div class="product_content product_4">
-                    <div class="product_image">
-                        <img src="../public/img/bed4.png" alt="Combi">
-                    </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card text-white border-primary bg-transparent" style="width: 18rem;">
+                            <img src="../public/img/bed1.png" class="mx-auto d-block bg-white card-img-top w-50" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Description</h5>
+                              <p class="card-text">
+                                <table>
+                                    <tr>
+                                        <th>Name:</th>
+                                        <td>Toy Story</td>
+                                    </tr>
                     
-                    <div class="product_description">
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Combi</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Brand:</th>
-                                <td>Lucky Pets</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Concept:</th>
-                                <td>Car</td>
-                            </tr>
-                        </table>
-                    </div>     
-                    <div class="star"></div>            
-                </div>    
+                                    <tr>
+                                        <th>Brand:</th>
+                                        <td>Fantasy Ruz Source</td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <th>Concept:</th>
+                                        <td>Disney</td>
+                                    </tr>
+                                </table>                                
+                              </p>
+                              
+                              <div class="star"></div>
+                              <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">ADD TO CART</a>
+                            </div>
+                          </div>    
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card text-white border-primary bg-transparent" style="width: 18rem;">
+                            <img src="../public/img/bed2.png" class="mx-auto d-block bg-white card-img-top w-50" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Description</h5>
+                              <p class="card-text">
+                                <table>
+                                    <tr>
+                                        <th>Name:</th>
+                                        <td>Tent</td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <th>Brand:</th>
+                                        <td>PATHD</td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <th>Concept:</th>
+                                        <td>Adventure</td>
+                                    </tr>
+                                </table>                                
+                              </p>
+                              <div class="star"></div>
+                              <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">ADD TO CART</a>
+                            </div>
+                          </div>    
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card text-white border-primary bg-transparent" style="width: 18rem;">
+                            <img src="../public/img/bed3.png" class="mx-auto d-block bg-white card-img-top w-50" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Description</h5>
+                              <p class="card-text">
+                                <table>
+                                    <tr>
+                                        <th>Name:</th>
+                                        <td>Piñata</td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <th>Brand:</th>
+                                        <td>Sentiments, Inc.</td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <th>Concept:</th>
+                                        <td>Colors</td>
+                                    </tr>
+                                </table>                                
+                              </p>
+                              <div class="star"></div>
+                              <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">ADD TO CART</a>
+                            </div>
+                          </div>    
+                    </div>                    
+                </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade text-black" id="cartModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Shopping cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">                            
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Amount</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                          </select>                                            
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+                </div>
+            </div>            
         </section>
-        <hr>    
-    </main>    
+
+        <hr>
+
+    </main>
 
     <footer>
         <div class="footer_signup">
@@ -206,6 +221,8 @@
                 
             </div>       
     </footer>
-    
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>          
 </body>
 </html>

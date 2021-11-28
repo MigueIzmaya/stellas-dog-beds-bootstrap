@@ -4,16 +4,14 @@ body {
     color: #eaf8bf;
 }
 
+/**************/
+
+/**** NAVEGADOR ENTRE PÁGINAS ****/
 .header .navbar {
     background-color: transparent !important;
 }
 
-/**************/
-
-/**** NAVEGADOR ENTRE PÁGINAS ****/
-header {
-    position: sticky !important;
-    top: 1px;
+header {        
     background-color: #ffaf87;    
 }
 
@@ -42,6 +40,14 @@ nav ul li:hover{
 }
 
 /***************************************************/
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
 
 /**** MAIN ****/
 
@@ -84,48 +90,14 @@ footer{
 }
 /****************/
 
-/**** GRID PRODUCTS ****/
-
-.grid_products{
-    display:flex;        
-    justify-items: center;
-    justify-content: space-between;
-}
-
-.product_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;    
-    padding: 0px;
-}
-
-.product_image img {    
-    height: auto;        
-    width: 150px;    
-    background-color: white;
-}
-
-/*section div {
-    padding: 20px;
-    background-color: #ff8e72;
-}*/
-
-.product_description{
-    color: black;
-    text-align: left;        
-    padding: 0px;
-    width: 180px;
-}
-
-.product_description table tr td {
-    font-size: 10px;    
-}
-
 .star{
-    background-image: url("../public/img/five_stars.png");    
-    background-size: 38.5px;
-    background-repeat: repeat-x;
-    height: 0px;
+    border-top: 10px;
+    display: block;
+    width: auto;
+    height: 16px;
+    background-image: url("../public/img/star.svg");        
+    background-size: 50px 16px;
+    
 }
 
 
@@ -219,37 +191,4 @@ footer{
 
 #description_about_container_3{
     grid-area: description3;
-}
-
-/* TOYS PAGE */
-
-#form div{
-    display: inline-block;
-}
-
-#busqueda{    
-    display: inline-block;
-}
-
-#personalize_product_description{    
-    position: relative;
-    bottom: 17vh;
-    margin-left: 50vh;
-}
-
-#form{
-    justify-content: right;
-}
-
-#table_shoping{
-    padding: 5vh 5vh 5vh 50vh;
-    text-align: left;
-}
-
-#table_shoping tr td{
-    padding: 5vh 5vh 5vh 5vh;
-}
-
-#count {
-    text-align: right;    
 }

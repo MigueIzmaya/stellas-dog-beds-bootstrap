@@ -20,8 +20,7 @@
 </head>
 <body>
 
-    <header class="header">
-
+    <header class="header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="public/img/logo.png" class="logo" alt="logo"></a>
@@ -66,55 +65,9 @@
                 </div>
             </div>
         </nav>   
-<!--
-        <div class="cabecera">
-            <div class="logo"> <a href="index.html"><img src="public/img/logo.png" alt=""> </a></div>
-            <div class="button">
-                <button type="button" class="btn btn-outline-primary">DOGS</button>
-                <button type="button" class="btn btn-outline-primary">CATS</button>
-            </div>            
-            <div class="carrito"> 
-                <a href="pages/shoppingCart.html">
-                    <img src="public/img/carrito.png" alt=""> 
-                </a>
-                
-                <img src="public/img/login.png" alt="">
-            </div>
-            
-        </div>  
-
-        <nav>
-
-            
-
-            <ul>
-                <li>
-                    <a href="pages/shop.html"> SHOP ALL </a>
-                </li>
-
-                <li>
-                    <a href="pages/bestseller.html"> BEST SELLER </a>
-                </li>
-
-                <li>
-                    <a href="pages/holidays.html"> HOLIDAYS</a>
-                </li>
-
-                <li>
-                    <a href="pages/toys.html"> TOYS </a>
-                </li>
-
-                <li>
-                    <a href="pages/personalize.html"> PERSONALIZE</a>
-                </li>
-
-                <li>
-                    <a href="pages/about.html"> ABOUT</a>
-                </li>
-            </ul>
-        </nav>
-    -->
     </header>
+
+    <div class="b-example-divider"></div>
 
     <main>
         <div class="carrusel">
@@ -158,116 +111,127 @@
         <!-- Tabla para mostrar los productos disponibles -->
 
         <section>
-            <div class="grid_products">
 
-                <div class="product_content product_1">
-                    <div class="product_image">
-                        <img src="public/img/bed1.png" alt="Toy Story">
-                    </div>                    
-                    <div class="product_description">
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Toy Story</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Brand:</th>
-                                <td>Fantasy Ruz Source</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Concept:</th>
-                                <td>Disney</td>
-                            </tr>
-                        </table>
-                        
-                    </div>
-
-                    <div class="star"></div>                    
-                </div>                
-        
-                <div class="product_content product_2">
-                    <div class="product_image">
-                        <img src="public/img/bed2.png" alt="Tent">
-                    </div>                    
-                    <div class="product_description">
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Tent</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Brand:</th>
-                                <td>PATHD</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Concept:</th>
-                                <td>Adventure</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="star"></div>
-                </div>            
-                
-                <div class="product_content product_3">
-                    <div class="product_image">
-                        <img src="public/img/bed3.png" alt="Piñata">
-                    </div>                    
-                    <div class="product_description">
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Piñata</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Brand:</th>
-                                <td>Sentiments, Inc.</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Concept:</th>
-                                <td>Colors</td>
-                            </tr>
-                        </table>
-                    </div>     
-                    <div class="star"></div>           
-                </div>
-        
-                <div class="product_content product_4">
-                    <div class="product_image">
-                        <img src="public/img/bed4.png" alt="Combi">
-                    </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card text-white border-primary bg-transparent" style="width: 18rem;">
+                            <img src="public/img/bed1.png" class="mx-auto d-block bg-white card-img-top w-50" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Description</h5>
+                              <p class="card-text">
+                                <table>
+                                    <tr>
+                                        <th>Name:</th>
+                                        <td>Toy Story</td>
+                                    </tr>
                     
-                    <div class="product_description">
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Combi</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Brand:</th>
-                                <td>Lucky Pets</td>
-                            </tr>
-            
-                            <tr>
-                                <th>Concept:</th>
-                                <td>Car</td>
-                            </tr>
-                        </table>
-                    </div>     
-                    <div class="star"></div>            
-                </div>    
+                                    <tr>
+                                        <th>Brand:</th>
+                                        <td>Fantasy Ruz Source</td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <th>Concept:</th>
+                                        <td>Disney</td>
+                                    </tr>
+                                </table>                                
+                              </p>
+                              
+                              <div class="star"></div>
+                              <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">ADD TO CART</a>
+                            </div>
+                          </div>    
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card text-white border-primary bg-transparent" style="width: 18rem;">
+                            <img src="public/img/bed2.png" class="mx-auto d-block bg-white card-img-top w-50" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Description</h5>
+                              <p class="card-text">
+                                <table>
+                                    <tr>
+                                        <th>Name:</th>
+                                        <td>Tent</td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <th>Brand:</th>
+                                        <td>PATHD</td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <th>Concept:</th>
+                                        <td>Adventure</td>
+                                    </tr>
+                                </table>                                
+                              </p>
+                              <div class="star"></div>
+                              <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">ADD TO CART</a>
+                            </div>
+                          </div>    
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card text-white border-primary bg-transparent" style="width: 18rem;">
+                            <img src="public/img/bed3.png" class="mx-auto d-block bg-white card-img-top w-50" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Description</h5>
+                              <p class="card-text">
+                                <table>
+                                    <tr>
+                                        <th>Name:</th>
+                                        <td>Piñata</td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <th>Brand:</th>
+                                        <td>Sentiments, Inc.</td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <th>Concept:</th>
+                                        <td>Colors</td>
+                                    </tr>
+                                </table>                                
+                              </p>
+                              <div class="star"></div>
+                              <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">ADD TO CART</a>
+                            </div>
+                          </div>    
+                    </div>                    
+                </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade text-black" id="cartModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Shopping cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">                            
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Amount</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                          </select>                                            
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+                </div>
+            </div>            
         </section>
-    
-        
-    
-        <hr>
     </main>
 
     <footer>
