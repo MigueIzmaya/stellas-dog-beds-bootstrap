@@ -59,35 +59,11 @@ main {
 
 /**** footer ****/
 
-footer{    
-    display: flex;
-    justify-content: space-around;
+footer{     
     background-color: #ffaf87;
     color: black;
 }
 
-.footer_help {
-    text-align: left;
-}
-
-.footer_description {
-    display: flex;
-}
-
-.footer_signup {
-    padding-left: 10px;   
-}
-
-
-.footer_about{    
-    width: 350px;
-    text-align: justify;    
-}
-
-.footer_social_media img{
-    width: auto;
-    height: 40px;
-}
 /****************/
 
 .star{
