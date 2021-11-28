@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 body {
     color: $body-color;
@@ -8,7 +9,7 @@ body {
 header {
     position: sticky;
     top: 1px;
-    background-color: $color-background;   
+    background-color: $background-color;   
 } 
 
 nav {
@@ -24,13 +25,16 @@ nav {
             list-style-type: none;    
             padding: 20px;
             a{    
-                color: #1B9AAA;
+                color: $hover-color;
                 text-decoration: none;
                 font-family: 'patrick hand';
                 font-weight: bolder;
                 font-size: 20px;
             }
-            
+
+            &:active {
+                @include random-active();
+            }            
         }
     }
 }
@@ -73,7 +77,7 @@ main {
 footer{    
     display: flex;
     justify-content: space-around;
-    background-color: $color-background;
+    background-color: $footer-color;
     color: $text-color;
 }
 
@@ -123,7 +127,7 @@ footer{
 }
 
 .product_description{
-    color: $text-color;
+    color: black;
     text-align: left;        
     padding: 0px;
     width: 180px;

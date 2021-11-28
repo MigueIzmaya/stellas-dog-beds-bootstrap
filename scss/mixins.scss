@@ -1,0 +1,38 @@
+@mixin color_active($number) {
+    background-color: rgb(random(255-$number), random(155 + $number), random(2*$number));
+ }
+ 
+
+$sites: ("pages/shop.html", "pages/bestseller.html", "pages/holidays.html", "pages/toys.html", "pages/personalize.html", "pages/about.html");
+
+@mixin random-active(){
+
+    @each $site in $sites {
+        a[href*="#{$site}"] {
+            @if $site == "pages/personalize.html" {
+                @include color_active(random(100))
+            }
+
+            @if $site == "pages/shop.html" {
+                @include color_active(random(50))            
+            }
+
+            @if $site == "pages/bestseller.html" {
+                @include color_active(random(20))            
+            }
+
+            @if $site == "pages/holidays.html" {
+                @include color_active(random(35))            
+            }
+
+            @if $site == "pages/toys.html" {
+                @include color_active(random(80))            
+            }
+
+            @if $site == "pages/about.html" {
+                @include color_active(random(70))            
+            }            
+        }
+    }
+}
+

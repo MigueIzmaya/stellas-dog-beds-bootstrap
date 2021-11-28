@@ -23,6 +23,18 @@ nav ul {
       font-family: 'patrick hand';
       font-weight: bolder;
       font-size: 20px; }
+    nav ul li:active a[href*="pages/shop.html"] {
+      background-color: #7e0115; }
+    nav ul li:active a[href*="pages/bestseller.html"] {
+      background-color: #73a00c; }
+    nav ul li:active a[href*="pages/holidays.html"] {
+      background-color: #b53025; }
+    nav ul li:active a[href*="pages/toys.html"] {
+      background-color: #453656; }
+    nav ul li:active a[href*="pages/personalize.html"] {
+      background-color: #678102; }
+    nav ul li:active a[href*="pages/about.html"] {
+      background-color: #58a926; }
 
 /**********************************/
 /**** TAMAÑO DE LOGO, CARRITO DE COMPRAS Y LOGIN ****/
