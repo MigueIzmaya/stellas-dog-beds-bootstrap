@@ -25,7 +25,9 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="public/img/logo.png" class="logo" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
                 </button>
                 <div class="nav-list collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -57,7 +59,7 @@
                     </ul>
 
                     <form class="d-flex">
-                        <a class= "nav-link" href="shoppingCart.html">
+                        <a class= "nav-link" href="pages/shoppingCart.html">
                             <img class="logo" src="public/img/carrito.png" alt=""> 
                         </a>  
                         <img class="logo" src="public/img/login.png" alt="">
@@ -67,26 +69,36 @@
         </nav>   
     </header>
 
-    <div class="b-example-divider"></div>
+    <div class="divider"></div>
 
     <main>
-        <div class="carrusel">
-            <div id= "description-carrusel">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur, 
-                velit tenetur voluptatum error quae neque unde asperiores minus ipsum. 
-                Ullam perferendis harum repudiandae numquam laborum, aut nobis asperiores consectetur.
-    
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio unde quas adipisci 
-                deleniti ut sed, accusantium fugit repudiandae ad aut neque? Corporis consequuntur eaque doloribus 
-                ratione impedit. 
-                Earum, a!
+
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h2>Description</h2>
+                    <p class="p-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur, 
+                        velit tenetur voluptatum error quae neque unde asperiores minus ipsum. 
+                        Ullam perferendis harum repudiandae numquam laborum, aut nobis asperiores consectetur.
+        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio unde quas adipisci 
+                        deleniti ut sed, accusantium fugit repudiandae ad aut neque? Corporis consequuntur eaque doloribus 
+                        ratione impedit. 
+                        Earum, a!
+                    </p>
+                </div>
+
+                <div class="col-md-6 d-flex">
+                    <img src="public/img/carrusel1.jpg" class="description-image" alt="description">
+                </div>
             </div>
-            <div id="carrusel-image"></div>
         </div>
-
-        <div class="container mt-5 mb-5">
-            <div class="row justify-content-center">
-
+        
+        
+        <div class="container pt-5 pb-5">
+            <h2 class="text-center">REVIEWS</h2>
+            <div class="row justify-content-center border pt-5 pb-5">
                 <div class="col-8 offset-md-4">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -105,14 +117,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    
-    
-        <!-- Tabla para mostrar los productos disponibles -->
+        </div>     
 
         <section>
-
-            <div class="container">
+            <div class="container pt-5 pb-5">
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <div class="card text-white border-primary bg-transparent" style="width: 18rem;">
