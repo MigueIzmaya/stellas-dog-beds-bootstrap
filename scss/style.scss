@@ -46,9 +46,19 @@ nav {
     width: 50px;
 }
 
+.mini {
+    height: auto;
+    width: 40px;
+}
+
 .logo-nav {
     width: 250px;
     height: auto;
+}
+
+.product-scroll {
+    height: 120px;
+    overflow-y: scroll;
 }
 
 /***************************************************/
