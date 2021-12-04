@@ -1,12 +1,15 @@
+@import "variables";
+@import "mixins";
+
 /**** BODY ****/
 
 body {
-    color: #eaf8bf;
+    color: $body-color;
 }
 
 /**** NAVEGADOR ENTRE PÁGINAS ****/
 header {        
-    background-color: #ffaf87;    
+    background-color: $header-color;    
 }
 
 nav {
@@ -17,11 +20,11 @@ nav {
             a{            
                 font-family: 'patrick hand';
                 font-size: 20px;
-                color: #1B9AAA !important;
+                color: $navbar-link-color;
             }
 
             &:hover{        
-                background-color: #ffaf87;
+                background-color: $navbar-hover-color;
                 font-weight: bolder;
                 transform: scale(1.2);
             }
@@ -41,19 +44,16 @@ nav {
 
 /**** TAMAÑO DE LOGO, CARRITO DE COMPRAS Y LOGIN ****/
 
-.logo {
-    height: auto;
-    width: 50px;
+.logo {    
+    @include sizeWidthHeight(50px, auto);
 }
 
 .mini {
-    height: auto;
-    width: 40px;
+    @include sizeWidthHeight(40px, auto);
 }
 
 .logo-nav {
-    width: 250px;
-    height: auto;
+    @include sizeWidthHeight(250px, auto);    
 }
 
 .product-scroll {
@@ -65,16 +65,16 @@ nav {
 
 .divider {
     height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
+    background-color: $divider-background-color;
+    border: solid $divider-border-color;
     border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    box-shadow: inset 0 .5em 1.5em $divider-background-color, inset 0 .125em .5em $divider-border-color;
   }
 
 /**** MAIN ****/
 
 main {
-    background-color: #ff8e72;
+    background-color: $main-color;
 }
 
 /*************/
@@ -82,8 +82,8 @@ main {
 /**** footer ****/
 
 footer{     
-    background-color: #ffaf87;
-    color: black;
+    background-color: $footer-background-color;
+    color: $footer-text-color;
 }
 
 /****************/
@@ -91,32 +91,28 @@ footer{
 .star{
     border-top: 10px;
     display: block;
-    width: auto;
-    height: 16px;
+    @include sizeWidthHeight(auto, 16px);    
     background-image: url("../public/img/star.svg");        
-    background-size: 50px 16px;
-    
+    background-size: 50px 16px;    
 }
 
 /**********************/
 
 /**** CARRUSEL ****/
 .description-image {    
-    width: 500px;
-    height: auto;}
+    @include sizeWidthHeight(500px, auto);    
+}
 /*****************/
 
 
 /* ABOUT PAGE */
 
 .about-container-header-img {
-    width: 1100px;
-    height: auto;    
+    @include sizeWidthHeight(1100px, auto);   
 }
 
 .about-container-img {
-    width: 350px;
-    height: auto;
+    @include sizeWidthHeight(350px, auto);     
 }
 
 .p-justify {
@@ -125,14 +121,14 @@ footer{
 
 @media only screen and (max-width: 576px) {
     .about-container-header-img {
-        display: none;
+        display: $display-max-width;
     }
 
     .about-container-img{
-        display: none;
+        display: $display-max-width;
     }
 
     .description-image {
-        display: none;
+        display: $display-max-width;
     }
 }
