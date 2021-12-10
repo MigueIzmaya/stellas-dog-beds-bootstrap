@@ -35,7 +35,11 @@ nav {
 }
 
 .card-image-head{
-    width: 18rem;
+    @include sizeWidthHeight(288px, 430px);    
+}
+
+.product-image {
+    @include sizeWidthHeight(auto, 180px);
 }
 
 .reviews {
