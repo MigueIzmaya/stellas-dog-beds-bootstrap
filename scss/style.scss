@@ -142,3 +142,13 @@ footer{
         display: $display-max-width;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .about-container-header-img {
+        @include sizeWidthHeight(700px, auto);   
+    }
+
+    .about-container-img {
+        @include sizeWidthHeight(220px, auto);     
+    }
+}
