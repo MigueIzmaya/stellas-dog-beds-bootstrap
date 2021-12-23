@@ -1,6 +1,8 @@
 @import "variables";
 @import "mixins";
 
+
+
 /**** BODY ****/
 
 body {
@@ -68,7 +70,7 @@ nav {
 /***************************************************/
 
 .divider {
-    height: 3rem;
+    height: 1rem;
     background-color: $divider-background-color;
     border: solid $divider-border-color;
     border-width: 1px 0;
