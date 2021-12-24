@@ -28,7 +28,6 @@ nav {
             &:hover{        
                 background-color: $navbar-hover-color;
                 font-weight: bolder;
-                transform: scale(1.2);
             }
         }
     }
@@ -92,6 +91,10 @@ footer{
     color: $footer-text-color;
 }
 
+.footer-image{
+    @include sizeWidthHeight(200px, auto);
+}
+
 /****************/
 
 .star{
@@ -150,5 +153,9 @@ footer{
 
     .about-container-img {
         @include sizeWidthHeight(220px, auto);     
+    }
+
+    .description-image {    
+        @include sizeWidthHeight(auto, 350px);    
     }
 }

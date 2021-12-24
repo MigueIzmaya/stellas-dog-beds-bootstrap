@@ -28,8 +28,7 @@ nav ul li {
     color: #1B9AAA !important; }
   nav ul li:hover {
     background-color: #ffaf87;
-    font-weight: bolder;
-    transform: scale(1.2); }
+    font-weight: bolder; }
 
 .card-image-head {
   width: 288px;
@@ -77,6 +76,10 @@ footer {
   background-color: #ffaf87;
   color: black; }
 
+.footer-image {
+  width: 200px;
+  height: auto; }
+
 /****************/
 .star {
   border-top: 10px;
@@ -121,4 +124,7 @@ footer {
     height: auto; }
   .about-container-img {
     width: 220px;
-    height: auto; } }
+    height: auto; }
+  .description-image {
+    width: auto;
+    height: 350px; } }
