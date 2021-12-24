@@ -16,10 +16,18 @@
 body {
   color: #eaf8bf; }
 
-/**** NAVEGADOR ENTRE PÁGINAS ****/
+/***************/
+/**** HEADER ****/
 header {
   background-color: #ffaf87; }
 
+/***************/
+/**** MAIN ****/
+main {
+  background-color: #ff8e72; }
+
+/*************/
+/**** NAVEGADOR ENTRE PÁGINAS ****/
 nav ul li {
   padding: 20px; }
   nav ul li a {
@@ -30,6 +38,8 @@ nav ul li {
     background-color: #ffaf87;
     font-weight: bolder; }
 
+/*******************************************/
+/**** Presentación de cards y review****/
 .card-image-head {
   width: 288px;
   height: 430px; }
@@ -41,7 +51,8 @@ nav ul li {
 .reviews {
   height: 300px; }
 
-/**** TAMAÑO DE LOGO, CARRITO DE COMPRAS Y LOGIN ****/
+/********************************************/
+/**** TAMAÑO DE LOGO, CARRITO DE COMPRAS ****/
 .logo {
   width: 50px;
   height: auto; }
@@ -59,6 +70,7 @@ nav ul li {
   overflow-y: scroll; }
 
 /***************************************************/
+/**** DIVISIÓN ENTRE HEADER Y MAIN ****/
 .divider {
   height: 1rem;
   background-color: rgba(0, 0, 0, 0.1);
@@ -66,11 +78,7 @@ nav ul li {
   border-width: 1px 0;
   box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15); }
 
-/**** MAIN ****/
-main {
-  background-color: #ff8e72; }
-
-/*************/
+/*********************************************/
 /**** footer ****/
 footer {
   background-color: #ffaf87;
@@ -81,6 +89,7 @@ footer {
   height: auto; }
 
 /****************/
+/**** ESTRELLAS DE PRODUCTOS ****/
 .star {
   border-top: 10px;
   display: block;
@@ -108,6 +117,7 @@ footer {
 .p-justify {
   text-align: justify; }
 
+/**** width > 576 ****/
 @media only screen and (max-width: 576px) {
   .about-container-header-img {
     display: none; }
@@ -118,6 +128,8 @@ footer {
   .footer-image {
     display: none; } }
 
+/**************************************/
+/**** width > 768 ****/
 @media only screen and (max-width: 768px) {
   .about-container-header-img {
     width: 700px;
@@ -128,3 +140,12 @@ footer {
   .description-image {
     width: auto;
     height: 350px; } }
+
+/**************************************/
+/**** width > 360 ****/
+@media only screen and (max-width: 360px) {
+  .image-personalize {
+    width: 90px;
+    height: auto; } }
+
+/**************************************/
