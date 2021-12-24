@@ -1,7 +1,7 @@
 {
   "name": "stellas-dog-beds-bootstrap",
   "version": "1.0.0",
-  "description": "",
+  "description": "The dog beds by Estela, is inspired by Jay Pritchett's dog Estela from Modern Family.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
