@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Values">
+    <meta name="keywords" content="values, service, compliance, quality">
 
     <!-- BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
@@ -19,122 +21,124 @@
     <title>About</title>
 </head>
 <body>
-    <header>
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../public/img/logo.png" class="logo" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+                <div class="nav-list collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <div class="cabecera">
-            <div class="logo"> <a href="../index.html"> <img src="../public/img/logo.png" alt=""> </a> </div>
-            <div class="button">
-                <button type="button" class="btn btn-outline-primary">DOGS</button>
-                <button type="button" class="btn btn-outline-primary">CATS</button>
-            </div>            
-            <div class="carrito"> 
-                <a href="shoppingCart.html">
-                    <img src="../public/img/carrito.png" alt=""> 
-                </a>                
-                <img src="../public/img/login.png" alt="">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/shop.html">Shop All</a>
+                        </li>                  
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/toys.html">Toys</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/personalize.html">Personalize</a>
+                        </li>
+
+                        <li class="nav-item bg-info bg-opacity-25">
+                            <a class="nav-link active" href="../pages/about.html" aria-current="true">About</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex">
+                        <a class= "nav-link" href="shoppingCart.html">
+                            <img class="logo" src="../public/img/carrito.png" alt="carrito"> 
+                        </a>                          
+                    </form>
+                </div>
             </div>
-            
-        </div>  
-
-        <nav>
-
-            <!-- Menú de la pantalla inicial -->
-
-            <ul>
-                <li>
-                    <a href="../index.html"> INICIO </a>
-                </li>
-        
-                <li>
-                    <a href="shop.html"> SHOP ALL </a>
-                </li>
-        
-                <li>
-                    <a href="bestseller.html"> BEST SELLER </a>
-                </li>
-        
-                <li>
-                    <a href="holidays.html"> HOLIDAYS</a>
-                </li>
-        
-                <li>
-                    <a href="toys.html"> TOYS </a>
-                </li>
-        
-                <li>
-                    <a href="personalize.html"> PERSONALIZE</a>
-                </li>
-        
-                <li>
-                    <a href="about.html"> ABOUT</a>
-                </li>
-            </ul>
         </nav>
     </header>
 
-    <main>
+    <div class="divider"></div>
 
-        <div id="about_container">
-            <div id="head_about_container">
-                <img src="../public/img/about_pets.jpg" alt="">
+    <main>
+        <div class="container pt-5 pb-5">
+            <h1 class="text-center">OUR VALUES</h2>
+            <div class="row pt-3">
+                <div class="col-md-12">
+                    <img class="about-container-header-img" src="../public/img/about_pets.jpg" alt="About us">
+                </div>
             </div>
-    
-            <div id="content_about_container_1">
-                <img src="../public/img/value1.png" alt="">
+            <div class="row align-items-center pt-3">
+                <div class="col-md-4 align-self-center d-flex">
+                    <img src="../public/img/value1.png" class="about-container-img" alt="Value One">
+                </div>
+
+                <div class="col-md-4 align-self-center d-flex">
+                    <img src="../public/img/value2.jpg" class="about-container-img" alt="Value Two">
+                </div>
+
+                <div class="col-md-4 align-self-center d-flex">
+                    <img src="../public/img/value3.jpg" class="about-container-img" alt="Value Three">
+                </div>
             </div>
-    
-            <div id="content_about_container_2">
-                <img src="../public/img/value2.jpg" alt="">
-            </div>
-    
-            <div id="content_about_container_3">
-                <img src="../public/img/value3.jpg" alt="">
-            </div>
-    
-            <div id="description_about_container_1" class="description_about_container">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio deserunt modi eos accusantium eligendi, provident corporis ea aliquam aliquid amet, a velit porro iusto consequatur vel laudantium enim dolore repellendus.
-            </div>
-    
-            <div id="description_about_container_2" class="description_about_container">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, neque necessitatibus hic sint vitae expedita itaque quaerat sunt quo nesciunt dolorum asperiores iusto officia accusamus voluptate nulla voluptatibus dignissimos esse?
-            </div>
-            
-            <div id="description_about_container_3" class="description_about_container">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ut corrupti minima nam cum perferendis quod iste quibusdam distinctio fugiat? Laborum beatae veritatis repellendus consectetur commodi quam distinctio quia culpa.
+
+            <div class="row pt-3">
+                <div class="col-md-4 col-12">
+                    <p>SERVICE</p>
+                    <p class="p-justify">As a supreme value, the quality of customer service is what distinguishes us from our competitors and is a factor in the success of our business. Service quality is measured in all customer interaction processes.</p>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <p>COMPLIANCE</p>
+                    <p class="p-justify">
+                        It is the performance of our work according to the characteristics of quality, quantity and timeliness negotiated and announced. In our activity, this value is reflected in a special way in customer service.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <p>QUALITY</p>
+                    <p class="p-justify">Reflects love, vocation and respect for others. It is the affection, cordiality and kindness in dealing with our colleagues, customers, business partners and other interlocutors. It is the seal of the attention we like to receive and give to others.</p>
+                </div>
             </div>
         </div>
-
-    </main>
-
-
-
-    
-
-    <hr>
+    </main>  
 
     <footer>
-        <div class="footer_signup">
-            <p>SIGN UP </p> 
-            <input type="text"> 
-        </div>
-
-        <div class="footer_help">
-            <h3>HELP</h3>
-            <p> FAQ</p>     
-            <p> Contact US</p>     
-            <p> ABOUT</p>   
-        </div>
-
-        <div class="footer_about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit eum, fugit et, ipsum nostrum voluptas, enim quaerat reiciendis inventore tempora vitae dicta quod libero quas! Commodi molestiae reprehenderit ducimus!</div>
-
-            <div class="footer_social_media">
-                <img src="../public/img/facebook.png" alt="facebook">
-                <img src="../public/img/twitter.png" alt="twitter">
-                <img src="../public/img/instagram.png" alt="instagram">
-                <p><img src="../public/img/logo.png" alt="Logo"></p>
-                
-            </div>       
-    </footer>
+        <div class="container-fluid pt-5">
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <button type="button" class="btn btn-primary">SIGN UP</button>
+                    <input class="form-control mt-1 mr-sm-1" type="text"> 
+                </div>
     
+                <div class="col-md-2 col-12">
+                    <h2>HELP</h2>
+                    <p><a href="../pages/faq.html" class="link-dark"> FAQ </a></p>
+                    <p><a href="../pages/about.html" class="link-dark">ABOUT</a></p>                    
+                </div>
+
+                <div class="col-md-4 col-12">
+                    Inspired by the Modern Family show
+                    <img src="../public/img/modern-family.png" class="footer-image" alt="modern family">
+                </div>
+
+                <div class="col-md-3 col-12 align-self-center d-flex justify-content-center">
+                    <img src="../public/img/facebook.svg" class = "logo" alt="facebook">
+                    <img src="../public/img/twitter.svg" class = "logo" alt="twitter">
+                    <img src="../public/img/instagram.svg" class = "logo" alt="instagram">                    
+                </div>
+            </div>
+        </div>        
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>       
+  
 </body>
 </html>
